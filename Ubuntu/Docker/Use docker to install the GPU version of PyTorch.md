@@ -2,7 +2,7 @@
 
 ## **1.在docker pytorch 網址找到自己需要的環境(網址:https://hub.docker.com/r/pytorch/pytorch/tags)**
 
-![image-20221014141436455](../assets/image-20221014141436455.png)
+![image-20221014142433490](assets/image-20221014142433490.png)
 
 
 
@@ -93,4 +93,5 @@ docker rm fb6c8d21e3aa
 註:
 
 > 1.docker 基礎命令 : https://www.runoob.com/docker/docker-command-manual.html
+>
 > 2.镜像和容器的区别 : https://blog.csdn.net/weixin_51297617/article/details/122529754?spm=1001.2101.3001.6650.12&utm_medium=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-12.pc_relevant_paycolumn_v3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~BlogCommendFromBaidu~Rate-12.pc_relevant_paycolumn_v3&utm_relevant_index=17
