@@ -22,7 +22,9 @@
 
 ### 2.刷固件(用ubuntu或者虚拟机镜像)
 
-将开发板通过micro usb-usb线连接笔记本上，打开虚拟机，找到home/Linux_for_Tegra，并进入，打开terminal![image-20220612105944659](./jetson nano environment configuration.assets/image-20220612105944659.png)
+将开发板通过micro usb-usb线连接笔记本上，打开虚拟机，找到home/Linux_for_Tegra，并进入，打开terminal
+
+![image-20220612105944659](./jetson nano environment configuration.assets/image-20220612105944659.png)
 
 执行命令
 
