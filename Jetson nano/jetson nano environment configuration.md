@@ -12,7 +12,7 @@
 
 ### 2.使用Etcher刷入镜像(15min左右、时间紧张可跳过验证阶段)
 
-<img src="jetson nano environment configuration.assets/image-20220612105039387.png" alt="image-20220612105039387" style="zoom:50%;" />
+<img src="./jetson nano environment configuration.assets/image-20220612105039387.png" alt="image-20220612105039387" style="zoom:50%;" />
 
 ## 二.刷固件
 
@@ -22,7 +22,7 @@
 
 ### 2.刷固件(用ubuntu或者虚拟机镜像)
 
-将开发板通过micro usb-usb线连接笔记本上，打开虚拟机，找到home/Linux_for_Tegra，并进入，打开terminal![image-20220612105944659](jetson nano environment configuration.assets/image-20220612105944659.png)
+将开发板通过micro usb-usb线连接笔记本上，打开虚拟机，找到home/Linux_for_Tegra，并进入，打开terminal![image-20220612105944659](./jetson nano environment configuration.assets/image-20220612105944659.png)
 
 执行命令
 
