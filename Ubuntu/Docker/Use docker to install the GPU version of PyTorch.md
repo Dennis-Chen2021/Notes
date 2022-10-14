@@ -9,21 +9,26 @@
 点击复制 devel 版 连接
 (此处以 docker pull pytorch/pytorch:1.9.1-cuda11.1-cudnn8-devel 为例)
 
-2. 打开Ubuntu terminal
+## 2.打开Ubuntu terminal
+
 从镜像仓库中拉取或者更新指定镜像
 
+```bash
  docker pull pytorch/pytorch:1.9.1-cuda11.1-cudnn8-devel
-1
+```
+
 有了镜像才可以创建容器，创建一个新的容器并运行镜像
 
+```ba
 docker run -it --name="cuda" --gpus=all pytorch/pytorch:1.9.1-cuda11.1-cudnn8-devel /bin/bash 
-1
-(各参数意思自行百度)
+```
+
+(各参数意思自行百度)![image-20221014141725044](assets/image-20221014141725044.png)
 
 
 验证:
 
-
+![image-20221014141733467](assets/image-20221014141733467.png)
 
 
 3. 从宿主机拷文件到docker容器里面
