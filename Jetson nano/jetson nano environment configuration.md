@@ -24,15 +24,13 @@
 
 将开发板通过micro usb-usb线连接笔记本上，打开虚拟机，找到home/Linux_for_Tegra，并进入，打开terminal
 
-![image-20220612105944659](./jetson nano environment configuration.assets/image-20220612105944659.png)
+<img src="./jetson nano environment configuration.assets/image-20220612105944659.png" alt="image-20220612105944659" style="zoom:50%;" />
 
 执行命令
 
 ```bash
 sudo ./flash.sh -r jetson-nano-devkit-emmc mmcblk0p1
 ```
-
-
 
 ## 三.TF卡扩容
 
@@ -84,17 +82,19 @@ sudo pip3 install -U jetson-stats
 
 1)在window端打开clash的局域网代理，如下图：
 
-![image-20220612112751930](jetson nano environment configuration.assets/image-20220612112751930.png)
+<img src="./jetson nano environment configuration.assets/image-20220612112751930.png" style="zoom:80%;" />
+
+
 
 2)在jetson 端
 
-![image-20220612113029985](jetson nano environment configuration.assets/image-20220612113029985.png)
+<img src="./jetson nano environment configuration.assets/image-20220612113029985.png" style="zoom:100%;" />
 
 3)验证
 
 在浏览器中输入https://www.youtube.com/
 
-![image-20220612113159153](jetson nano environment configuration.assets/image-20220612113159153.png)
+<img src="./jetson nano environment configuration.assets/image-20220612113159153.png" style="zoom:100%;"/>
 
 得到上述界面即代表成功。
 
@@ -106,7 +106,9 @@ sudo jtop
 
 现象如下:
 
-![image-20220612182723861](jetson nano environment configuration.assets/image-20220612182723861.png)
+<img src="./jetson nano environment configuration.assets/image-20220612182723861.png" style="zoom:100%;" />
+
+
 
 ## 六.检查已经安装的组件
 
@@ -134,7 +136,9 @@ source ~/.bashrc
 
 然后在执行`nvcc -V`，会得到以下结果：
 
-![image-20220612183800865](jetson nano environment configuration.assets/image-20220612183800865.png)
+<img src="./jetson nano environment configuration.assets/image-20220612183800865.png" style="zoom:150%;" />
+
+
 
 
 
@@ -148,7 +152,9 @@ source ~/.bashrc
 jetson_release
 ```
 
-![image-20220908105504930](jetson nano environment configuration.assets/image-20220908105504930.png)
+<img src="./jetson nano environment configuration.assets/image-20220908105504930.png" style="zoom:150%;" />
+
+
 
 可以注意到 compiled CUDA的選項是 NO，所以我們需要耗費一點時間來重建 OpenCV。
 
@@ -166,11 +172,7 @@ sudo vim /etc/systemd/nvzramconfig.sh
 
 按"Esc"输入“:wq”保存退出，重启板子。
 
-<img src="jetson nano environment configuration.assets/image-20220908110702430.png" alt="image-20220908110702430" style="zoom:67%;" />
-
-
-
-
+<img src="./jetson nano environment configuration.assets/image-20220908110702430.png" style="zoom:100%;" />
 
 
 
@@ -257,7 +259,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 跑完時，務必看 cmake 跑出來的 log 檢查有沒有抓到 python3
 
-![image-20220908111751813](jetson nano environment configuration.assets/image-20220908111751813.png)
+<img src="./jetson nano environment configuration.assets/image-20220908111751813.png" style="zoom:100%;" />
 
 ### 5.start Build 
 
@@ -299,15 +301,13 @@ sudo ldconfig
 
 如果出現以下訊息就代表成功！
 
-![image-20220908113029701](jetson nano environment configuration.assets/image-20220908113029701.png)
+<img src="jetson nano environment configuration.assets/image-20220908113029701.png" style="zoom:100%;" />
+
+
 
 也可以用jtop的info tab来确认
 
-![image-20220908113223319](jetson nano environment configuration.assets/image-20220908113223319.png)
-
-
-
-
+<img src="jetson nano environment configuration.assets/image-20220908113223319.png" style="zoom:100%;" />
 
 
 
@@ -335,7 +335,9 @@ deepstream-app --version-all
 
 效果圖如下，即為成功
 
-![image-20220613100429557](jetson nano environment configuration.assets/image-20220613100429557.png)
+<img src="jetson nano environment configuration.assets/image-20220613100429557.png" style="zoom:100%;" />
+
+
 
 安裝參考例程：https://blog.csdn.net/m0_37605642/article/details/122648297
 
