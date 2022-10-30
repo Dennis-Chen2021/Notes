@@ -56,12 +56,16 @@
 
 
 
-### 1.3  代码复现
+### 1.3  实验--代码复现
 
 #### 1.3.1 输入&&输出&&数据集
 
-- 输入：
-- 输出:
+- 输入：1-n pics
+
+- 输出:  Normal、Diffuse、Roughness、Specular、Render
+
+  <img src="assets/image-20221030205145495.png" alt="image-20221030205145495"  />
+
 - 数据集：
 
 
