@@ -1,40 +1,6 @@
 # Paper reading and code reproduction records
 
-<!-- TOC -->
-* [Paper reading and code reproduction records](#paper-reading-and-code-reproduction-records)
-  * [0.`Single-Image SVBRDF Capture with a Rendering-Aware Deep Network`](#0-single-image-svbrdf-capture-with-a-rendering-aware-deep-network)
-    * [1.1 目的动机](#11-)
-    * [1.2  主要思想](#12--)
-    * [1.3  实验--代码复现 code 项目主页](#13-----code-)
-      * [](#)
-  * [1.`Deep Inverse Rendering for High-resolution SVBRDF Estimation from an Arbitrary Number of Images`[ACM SIGGRAPH 2019 Q1]](#1-deep-inverse-rendering-for-high-resolution-svbrdf-estimation-from-an-arbitrary-number-of-images-acm-siggraph-2019-q1)
-    * [1.1 目的动机](#11-)
-      * [1.1.1 现阶段缺点:](#111--)
-      * [1.1.2 目标](#112-)
-    * [1.2  主要思想](#12--)
-      * [核心思想:](#-)
-      * [Autoencoder 设计与训练](#autoencoder-)
-    * [1.3  实验--代码复现 code 作者首页--高端](#13-----code---)
-      * [1.3.1 输入&&输出&&数据集](#131-)
-      * [1.3.2 训练&&测试](#132-)
-        * [训练](#)
-        * [测试](#)
-  * [2.`Flexible SVBRDF Capture with a Multi-Image Deep Network`](#2-flexible-svbrdf-capture-with-a-multi-image-deep-network)
-  * [3.`Highlight-Aware Two-Stream Network for Single-Image SVBRDF Acquisition`](#3-highlight-aware-two-stream-network-for-single-image-svbrdf-acquisition)
-    * [3.1 目的动机](#31-)
-    * [3.2  主要思想](#32--)
-      * [核心思想:](#-)
-      * [解决的难点](#)
-        * [1.如何解决图像过曝问题？](#1)
-        * [2.如何解决模型过拟合？](#2)
-        * [3.如何解决diffuse 和specular 贴图的解缠效果差？](#3diffuse-specular-)
-    * [3.3  实验--代码复现](#33----)
-      * [3.3.1 输入&&输出&&数据集](#331-)
-      * [3.3.2 训练&&测试 Code](#332--code)
-        * [训练](#)
-        * [测试](#)
-          * [](#)
-          <!-- TOC -->
+123
 
 ## 0.`Single-Image SVBRDF Capture with a Rendering-Aware Deep Network`
 
