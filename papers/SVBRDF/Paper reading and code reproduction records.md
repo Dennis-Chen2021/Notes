@@ -180,7 +180,7 @@
 
 
 
-#### 3.3.2 训练&&测试 [Code]([happyvictor008/高光感知双流网络单图像SVBRDF采集 (github.com)](https://github.com/happyvictor008/Highlight-Aware-Two-Stream-Network-for-Single-Image-SVBRDF-Acquisition))
+#### 3.3.2 训练&&测试 [Code](https://github.com/happyvictor008/Highlight-Aware-Two-Stream-Network-for-Single-Image-SVBRDF-Acquisition)
 
 ##### 训练
 
