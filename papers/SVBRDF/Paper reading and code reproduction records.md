@@ -3,17 +3,17 @@
 
 ## 0.`Single-Image SVBRDF Capture with a Rendering-Aware Deep Network`
 
-### 1.1 目的动机
+### 0.1 目的动机
 
 
 
-### 1.2  主要思想
+### 0.2  主要思想
 
 
 
-### 1.3  实验--代码复现 [code](https://github.com/valentin-deschaintre/Single-Image-SVBRDF-Capture-rendering-loss) [项目主页](https://team.inria.fr/graphdeco/projects/deep-materials/)
+### 0.3  实验--代码复现 [code](https://github.com/valentin-deschaintre/Single-Image-SVBRDF-Capture-rendering-loss) [项目主页](https://team.inria.fr/graphdeco/projects/deep-materials/)
 
-#### 
+
 
 
 
