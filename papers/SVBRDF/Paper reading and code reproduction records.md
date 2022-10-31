@@ -1,5 +1,8 @@
 # Paper reading and code reproduction records
 
+[TOC]
+
+
 
 ## 0.`Single-Image SVBRDF Capture with a Rendering-Aware Deep Network`
 
@@ -191,7 +194,7 @@ python HATW_net.py --mode train --output_dir ./output_dir/20221031 --input_dir .
 
 ##### 测试
 
-###### 
+
 
 
 
