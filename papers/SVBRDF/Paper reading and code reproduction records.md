@@ -2,7 +2,29 @@
 
 [TOC]
 
+## 0.`Single-Image SVBRDF Capture with a Rendering-Aware Deep Network`
 
+### 1.1 目的动机
+
+
+
+### 1.2  主要思想
+
+
+
+### 1.3  实验--代码复现 [code](https://github.com/valentin-deschaintre/Single-Image-SVBRDF-Capture-rendering-loss) [项目主页](https://team.inria.fr/graphdeco/projects/deep-materials/)
+
+#### 
+
+
+
+
+
+
+
+
+
+------
 
 ## 1.`Deep Inverse Rendering for High-resolution SVBRDF Estimation from an Arbitrary Number of Images`[ACM SIGGRAPH 2019 Q1]
 
@@ -103,6 +125,74 @@
 ## 2.`Flexible SVBRDF Capture with a Multi-Image Deep Network`
 
 
+
+
+
+
+
+
+
+## 3.`Highlight-Aware Two-Stream Network for Single-Image SVBRDF Acquisition`
+
+### 3.1 目的动机
+
+​		在虚拟三维场景内容创建过程中，材质的高质量重建向来是一个复杂耗时的工作。传统的材质重建方法通常需要依赖特殊的设备、受过专业训练的技术员以及长时间的拍摄。	而本次设计的双流网络，只需要消费级别的相机（手机等），并且只需要拍摄一张图片，即可由非专业人员重建出高质量的材质参数。其中，**双流网络**以HA卷积为基础，其中HA卷积的作用是：在过度曝光的图像区域填补缺失内容；因此，双流网络可以充分利用图像的有用特征，促进材质属性的解缠学习。这也正是本篇论文的关键性创新。
+
+
+
+### 3.2  主要思想
+
+#### 核心思想:
+
+​		从深度学习出发，用神经网络结合大量数据，尝试在未知的空间变化情况下，完成平面材质的外观建模。论文中的方法仅采用了单张图片作为输入，不需要相机参数和光源参数，就能输出高质量材质参数.
+
+
+
+####  解决的难点
+
+##### 1.如何解决图像过曝问题？
+
+​		由于过曝区域无法估计，采用让网络自学习判别过曝区域，并修复。
+
+##### 2.如何解决模型过拟合？
+
+​		训练数据集包含18万张图片，可以比较好地避免过拟合的问题。
+
+​		由于材质估计是具有二义性的，即不同的SVBRDF 也有可能生成一样的材质图，所以研究人员训练loss中包含render loss ，即估计的材质贴图与ground truth 在同样的光照条件下渲染出材质图做L1 loss。这样即表示不那么强调材质贴图的完全一致，可以有效缓解过拟合问题。
+
+##### 3.如何解决diffuse 和specular 贴图的解缠效果差？
+
+​		使用多解码器以及其中的AFS模块，多解码器是为了让每个解码器可以在high level 特征提取时就通过AFS 模块着重提取对应的贴图需要的特征，以达到解缠目的。
+
+
+
+### 3.3  实验--代码复现
+
+#### 3.3.1 输入&&输出&&数据集
+
+- 输入：
+
+- 输出:  
+
+  
+
+- 数据集：(**不详**)
+
+
+
+#### 3.3.2 训练&&测试 [Code]([happyvictor008/高光感知双流网络单图像SVBRDF采集 (github.com)](https://github.com/happyvictor008/Highlight-Aware-Two-Stream-Network-for-Single-Image-SVBRDF-Acquisition))
+
+##### 训练
+
+```bash
+python HATW_net.py --mode train --output_dir ./output_dir/20221031 --input_dir ../Data_Deschaintre18/trainBlended --batch_size 1 --loss adv --useLog
+```
+
+
+
+##### 测试
+
+###### 
 
 
 
