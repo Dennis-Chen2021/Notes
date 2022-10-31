@@ -6,6 +6,8 @@
 
 ## 1.`Deep Inverse Rendering for High-resolution SVBRDF Estimation from an Arbitrary Number of Images`[ACM SIGGRAPH 2019 Q1]
 
+![image-20221031101303529](assets/image-20221031101303529.png)
+
 ### 1.1 目的动机
 
 #### 1.1.1 现阶段缺点:
@@ -56,7 +58,7 @@
 
 
 
-### 1.3  实验--代码复现
+### 1.3  实验--代码复现 [code](https://github.com/msraig/DeepInverseRendering) [作者首页--高端](https://gao-duan.github.io/)
 
 #### 1.3.1 输入&&输出&&数据集
 
@@ -66,7 +68,41 @@
 
   <img src="assets/image-20221030205145495.png" alt="image-20221030205145495"  />
 
-- 数据集：
+- 数据集：(**不详**)
+
+
+
+#### 1.3.2 训练&&测试
+
+##### 训练
+
+代码不详
+
+##### 测试
+
+1. ###### (captured images as input)
+
+   ```bash
+   python3 main.py --N 20 --checkpoint ../model/ --dataDir ../example_data/example_svbrdf --logDir ../log_test_example_20221030_pic --initDir  ../example_data/example_init --network network_ae_fixBN --init_method svbrdf --input_type image --wlv_type load --wlvDir ../example_data/example_wlv
+   ```
+
+   
+
+2. ###### (SVBRDF map as input)
+
+   ```bash
+   python3 main.py --N 20 --checkpoint ../model/ --dataDir ../example_data/example_svbrdf --logDir ../log_test_example_20221030 --initDir  ../example_data/example_init --network network_ae_fixBN --init_method svbrdf --input_type svbrdf --wlv_type load --wlvDir ../example_data/example_wlv
+   ```
+
+   
+
+
+
+
+
+
+
+
 
 
 
