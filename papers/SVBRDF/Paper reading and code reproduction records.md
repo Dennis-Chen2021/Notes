@@ -1,6 +1,5 @@
 # Paper reading and code reproduction records
 
-123
 
 ## 0.`Single-Image SVBRDF Capture with a Rendering-Aware Deep Network`
 
