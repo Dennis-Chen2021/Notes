@@ -94,9 +94,7 @@ D4 网络训练包含两个分支:(i) Dehazing-Rehazing 分支和 (ii) Hazing-De
 
 将雾图像 H 输入到去雾网络![\mathcal{G}_D](assets/mathcal{G}_D.gif)中，可以得到估计的透射图![\hat{t}](https://latex.codecogs.com/gif.latex?%5Chat%7Bt%7D)，估计的散射系![\hat{\beta}_H](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Cbeta%7D_H)数  和计算的深度![d_H](assets/gif.gif)。同时，去雾结果![\hat{c}](assets/hat{c}.gif)可以通过:
 
-![\hat {\boldsymbol {c}}(z)=\frac {\textbf {H}(z)-\hat {A}}{\mathbf {\hat {t}}(z)} + \hat {A}, \label {eq_recover}](assets/label {eq_recover}.gif)
-
-
+![\hat {\boldsymbol {c}}(z)=\frac {\textbf {H}(z)-\hat {A}}{\mathbf {\hat {t}}(z)} + \hat {A}, \label {eq_recover}](https://latex.codecogs.com/gif.latex?%5Chat%20%7B%5Cboldsymbol%20%7Bc%7D%7D%28z%29%3D%5Cfrac%20%7B%5Ctextbf%20%7BH%7D%28z%29-%5Chat%20%7BA%7D%7D%7B%5Cmathbf%20%7B%5Chat%20%7Bt%7D%7D%28z%29%7D%20&plus;%20%5Chat%20%7BA%7D%2C%20%5Clabel%20%7Beq_recover%7D)
 
 其中![\hat{A}](https://latex.codecogs.com/gif.latex?%5Chat%7BA%7D) 是由先验估计的大气光。
 
