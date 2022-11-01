@@ -122,3 +122,18 @@ D4 网络训练包含两个分支:(i) Dehazing-Rehazing 分支和 (ii) Hazing-De
 
 值得注意的是，在这个分支中，由于![\beta_C](https://latex.codecogs.com/gif.latex?%5Cbeta_C)  是从一个预先定义的范围中采样的，加雾过程可以被视为去雾网络后续训练的数据增强操作。
 
+
+
+
+
+
+
+
+
+----
+
+## reference
+
+1. [CVPR 2022 Self-augmented Unpaired Image Dehazing via Density and Depth Decomposition个人学习笔记](https://blog.csdn.net/zhouaho2010/article/details/126700867)
+2. [CVPR 2022 无监督去雾：Self-augmented Unpaired Image Dehazing via Density and Depth Decomposition](https://blog.csdn.net/u014546828/article/details/125621139)
+3. 
