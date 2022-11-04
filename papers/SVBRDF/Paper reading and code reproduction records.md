@@ -18,14 +18,6 @@
 
 
 
-
-
-
-
-
-
-
-
 ------
 
 ## 1.`Deep Inverse Rendering for High-resolution SVBRDF Estimation from an Arbitrary Number of Images`[ACM SIGGRAPH 2019 Q1]

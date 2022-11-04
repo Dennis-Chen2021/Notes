@@ -26,17 +26,15 @@
 
 
 
+
+
 ### 本文核心思想
 
 ​		本文提出了一种<font color='red'>自增强</font>的图像去雾框架，称为 D4 (Dehazing via Decomposition, transmission map into Density and Depth)，用于**生成和去除雾霾**。该框架不只是估计传输图或干净的内容，而是<font color='purple'>专注于探索模糊和干净图像中包含的散射系数和深度信息</font>。在估计场景深度的情况下，本文的方法能够重新渲染不同厚度的模糊图像，这进一步有利于去雾网络的训练。值得注意的是，整个训练过程只需要不配对的**模糊**图像和**干净**的图像，但成功地从单一的模糊图像中恢复散射系数、深度图和干净内容。
 
 ![image-20221101144720159](assets/image-20221101144720159.png)
 
-
-
-
-
-​							本文提出的网络d4的体系结构。整个网络包括除雾修复分支和HazingDehazing分支。在雾霾生成中同时考虑深度和密度信息。引入了两对伪监督来确认估计深度和散射系数的准确性。
+​		本文提出的网络d4的体系结构。整个网络包括除雾修复分支和HazingDehazing分支。在雾霾生成中同时考虑深度和密度信息。引入了两对伪监督来确认估计深度和散射系数的准确性。
 
 ### 优势
 
@@ -56,7 +54,7 @@
 
 ![(\hat {\beta }, \hat {\mathbf {t}}) = \mathcal {G}_D(\mathbf {H}).](https://latex.codecogs.com/gif.latex?%28%5Chat%20%7B%5Cbeta%20%7D%2C%20%5Chat%20%7B%5Cmathbf%20%7Bt%7D%7D%29%20%3D%20%5Cmathcal%20%7BG%7D_D%28%5Cmathbf%20%7BH%7D%29.)
 
-由估计的透射率![\hat{t}](https://latex.codecogs.com/gif.latex?%5Chat%7Bt%7D) 和散射系数![\hat {\beta }](https://latex.codecogs.com/gif.latex?%5Chat%20%7B%5Cbeta%20%7D)可以计算出朦胧图像的深度图 d，公式为:
+由估计的透射率![\hat{t}](https://latex.codecogs.com/gif.latex?%5Chat%7Bt%7D) 和散射系数![\hat {\beta }](https://latex.codecogs.com/gif.latex?%5Chat%20%7B%5Cbeta%20%7D)可以计算出有雾图像的深度图 d，公式为:
 
 ![\mathbf {{d}}(z)=\frac {\ln \mathbf {\hat {t}}(z)}{-\hat {\beta }}](https://latex.codecogs.com/gif.latex?%5Cmathbf%20%7B%7Bd%7D%7D%28z%29%3D%5Cfrac%20%7B%5Cln%20%5Cmathbf%20%7B%5Chat%20%7Bt%7D%7D%28z%29%7D%7B-%5Chat%20%7B%5Cbeta%20%7D%7D)
 
@@ -121,16 +119,6 @@ D4 网络训练包含两个分支:(i) Dehazing-Rehazing 分支和 (ii) Hazing-De
 最后，可以使用公式![\hat {\boldsymbol {c}}(z)=\frac {\textbf {H}(z)-\hat {A}}{\mathbf {\hat {t}}(z)} + \hat {A}, \label {eq_recover}](assets/label {eq_recover}.gif)中给出的相同计算来重建干净的输入。
 
 值得注意的是，在这个分支中，由于![\beta_C](https://latex.codecogs.com/gif.latex?%5Cbeta_C)  是从一个预先定义的范围中采样的，加雾过程可以被视为去雾网络后续训练的数据增强操作。
-
-
-
-
-
-
-
-
-
-----
 
 ## reference
 
