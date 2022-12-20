@@ -106,3 +106,7 @@ DPU(Deep learning Processing Unit, 即深度学习处理器)最早由国内深�
 - WPU – Wearable Processing Unit， 可穿戴处理器，Ineda Systems公司推出的可穿戴片上系统产品，包含GPU/MIPS CPU等IP。
 - XPU – 百度与Xilinx公司在2017年Hotchips大会上发布的FPGA智能云加速，含256核。
 - ZPU – Zylin Processing Unit,由挪威Zylin 公司推出的一款32位开源处理器。
+
+
+
+![image-20221220210654682](D:\WindowsC2D\Documents\GitHub\Notes\Rockchip\TB-RK3399ProD\notes\assets\image-20221220210654682.png)
